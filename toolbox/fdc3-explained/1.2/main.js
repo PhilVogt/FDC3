@@ -86,7 +86,7 @@ function setUpEventListeners() {
   document.getElementById("raise-intent__btn").addEventListener("click", raiseIntent);
 
   document.getElementById("context-type").addEventListener("keyup", (event) => {
-  //  we only want to get the context wen the user hits enter
+    //  we only want to get the context wen the user hits enter
     if (event.key === "Enter") {
       event.preventDefault();
 
@@ -182,7 +182,7 @@ async function getContext(contextType) {
     if (contextType) {
       contextListener = fdc3.addContextListener(contextType, (context) => contextResultBox.innerText = JSON.stringify(context, null, 2))
     } else {
-      contextListener = fdc3.addContextListener(context => contextResultBox.innerText = JSON.stringify(context, null, 2));
+      contextListener = fdc3.addContextListener(null, context => contextResultBox.innerText = JSON.stringify(context, null, 2));
     }
   } catch (error) {
     console.error("Unable to add a context listener", error)
