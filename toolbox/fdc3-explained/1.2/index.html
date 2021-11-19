@@ -6,7 +6,7 @@
 	</title>
 
 
-<meta charset="UTF-8">
+	<meta charset="UTF-8">
 	<link rel="stylesheet" href="./styles.css">
 	<script type="module" src="./main.js" defer></script>
 
@@ -89,6 +89,14 @@
 			</tr>
 
 			<tr>
+				<td class="header">Join App Channel:</td>
+				<td>App Channel: <select class="fdc3-channels" id="join-app-channel"></select>
+					<Button type="button" id="join-app-channel__btn" disabled>Join</Button>
+				</td>
+				<td><Button type="button" id="leave-app-channel__btn" disabled>Leave</Button></td>
+			</tr>
+
+			<tr>
 				<td colspan="3">
 					<hr>
 				</td>
@@ -100,8 +108,8 @@
 			<tr>
 				<td><textarea id="txtBroadcastData">{"id":{"ISIN":"US0378331005","SEDOL":"2046251","ticker":"AAPL"},"name":"Apple Inc.","type":"fdc3.instrument"}
 </textarea></td>
-<td rowspan="2"><Button type="button" id="broadcast__btn" disabled>Send</Button>
-</td>
+				<td rowspan="2"><Button type="button" id="broadcast__btn" disabled>Send</Button>
+				</td>
 			</tr>
 
 			<tr>
@@ -127,6 +135,32 @@
 			</tr>
 
 			<tr>
+				<td class="header" rowspan="3">Intent Listener:</td>
+			</tr>
+
+			<tr>
+				<td>Intent Listener: <input type="text" id="intent-listener" value="ViewChart"></td>
+			</tr>
+
+			<tr>
+				<td><Button id="add-intent-listener__btn" disabled>Listen for Intent</Button></td>
+				<td>
+					<div id="intent-result">
+						<i>Intent result will appear here.</i>
+					</div>
+				</td>
+			</tr>
+
+
+
+
+			<tr>
+				<td colspan="3">
+					<hr>
+				</td>
+			</tr>
+
+			<tr>
 				<td class="header" rowspan="3">Raise Intent:</td>
 			</tr>
 
@@ -135,7 +169,9 @@
 			</tr>
 
 			<tr>
-				<td><textarea id="intent-context">{"id":{"ISIN":"US0378331005","SEDOL":"2046251","ticker":"AAPL"},"name":"Apple Inc.","type":"fdc3.instrument"}</textarea></td>
+				<td><textarea
+						id="intent-context">{"id":{"ISIN":"US0378331005","SEDOL":"2046251","ticker":"AAPL"},"name":"Apple Inc.","type":"fdc3.instrument"}</textarea>
+				</td>
 				<td><Button id="raise-intent__btn" disabled>Raise Intent </Button></td>
 			</tr>
 

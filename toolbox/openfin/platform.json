@@ -5,7 +5,9 @@
     },
     "platform": {
         "uuid": "fdc3_explained_platform",
+        "providerUrl": "http://localhost:10000/toolbox/openfin/provider.html",
         "autoShow": false,
+        "fdc3InteropApi": "1.2",
         "defaultViewOptions": {
             "fdc3InteropApi": "1.2"
         }
@@ -22,17 +24,23 @@
                 "layout": {
                     "content": [
                         {
-                            "type": "stack",
+                            "type": "row",
                             "id": "no-drop-target",
                             "content": [
                                 {
                                     "type": "component",
                                     "componentName": "view",
                                     "componentState": {
-                                        "name": "component_A1",
-                                        "processAffinity": "ps_1",
-                                        "showDevTools": true,
-                                        "url": "https://donbasuno.github.io/FDC3/toolbox/fdc3_explained.html"
+                                        "name": "LeftView",
+                                        "url": "http://localhost:10000/toolbox/fdc3-explained/1.2/index.html"
+                                    }
+                                },
+                                {
+                                    "type": "component",
+                                    "componentName": "view",
+                                    "componentState": {
+                                        "name": "RightView",
+                                        "url": "http://localhost:10000/toolbox/fdc3-explained/1.2/index.html"
                                     }
                                 }
                             ]
@@ -40,7 +48,7 @@
                     ]
                 }
             }
-		]
+        ]
     },
     "startup_app": null
 }

@@ -21,16 +21,22 @@
                 "layout": {
                     "content": [
                         {
-                            "type": "stack",
+                            "type": "row",
                             "id": "no-drop-target",
                             "content": [
                                 {
                                     "type": "component",
                                     "componentName": "view",
                                     "componentState": {
-                                        "name": "component_A1",
-                                        "processAffinity": "ps_1",
-                                        "showDevTools": true,
+                                        "name": "view-1624445902281-9204",
+                                        "url": "https://donbasuno.github.io/FDC3/toolbox/fdc3_explained.html"
+                                    }
+                                },
+                                {
+                                    "type": "component",
+                                    "componentName": "view",
+                                    "componentState": {
+                                        "name": "view-1624445902281-8726",
                                         "url": "https://donbasuno.github.io/FDC3/toolbox/fdc3_explained.html"
                                     }
                                 }

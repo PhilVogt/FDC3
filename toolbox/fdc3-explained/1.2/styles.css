@@ -109,7 +109,7 @@ select {
   font-weight: 700;
 }
 
-#context-result{
+#context-result, #intent-result{
   border: 1px solid white;
   padding: 17px;
   color: #9fffa2;
